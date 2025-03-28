@@ -36,7 +36,6 @@ export default function Canvas({
   };
 
   return (
-    // Larger canvas area, dark background, subtle border
     <div className="relative w-[900px] h-[500px] bg-[#2a2a2a] border border-[#444] rounded-md overflow-hidden">
       {isPlaying ? (
         <div className="absolute inset-0">
@@ -125,7 +124,7 @@ export default function Canvas({
                 alt="uploaded"
                 height={img.height || 0}
                 width={img.width || 0}
-                className="object-cover rounded-md border border-transparent hover:border-blue-500 cursor-move"
+                className="object-cover rounded-md border border-transparent hover:border-blue-500 cursor-move w-[100%] h-[100%]"
               />
             </Rnd>
           ))}
